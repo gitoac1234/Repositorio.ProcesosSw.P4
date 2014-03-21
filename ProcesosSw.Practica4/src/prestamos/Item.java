@@ -16,6 +16,8 @@ public class Item {
 
 		setLended(false);
 
+		
+		
 	}
 
 	public void setLended(boolean lended) {
