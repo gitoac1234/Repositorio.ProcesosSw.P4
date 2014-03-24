@@ -18,6 +18,8 @@ public abstract class Loan {
 
 		this(p, null, null, null);
 		
+		
+		//Comentario
 
 	}
 
