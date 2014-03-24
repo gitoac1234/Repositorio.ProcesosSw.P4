@@ -9,7 +9,7 @@ public class ItemType {
 		setName(name);
 
 	}
-
+  
 	private void setName(String name) {
 
 		typeName = name;
