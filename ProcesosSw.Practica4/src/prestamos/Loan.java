@@ -17,6 +17,7 @@ public abstract class Loan {
 	public Loan(Person p) {
 
 		this(p, null, null, null);
+		
 
 	}
 
