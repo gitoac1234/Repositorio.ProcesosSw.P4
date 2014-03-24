@@ -2,12 +2,14 @@ package prestamos;
 
 import java.math.BigDecimal;
 
-public class MoneyLoan {
+public class MoneyLoan extends Loan {
 
 	private BigDecimal amount;
 
-	public MoneyLoan(BigDecimal amount) throws ArithmeticException {
+	public MoneyLoan(Person p, BigDecimal amount) throws ArithmeticException {
 
+		super(p);
+		
 		if (amount.compareTo(BigDecimal.ZERO) > 0) {
 
 			setAmount(amount);
@@ -17,15 +19,12 @@ public class MoneyLoan {
 			throw new ArithmeticException();
 
 		}
-
-		
-		
 		
 	}
 
-	public MoneyLoan(MoneyLoan ml) throws ArithmeticException {
+	public MoneyLoan(Person p, MoneyLoan ml) throws ArithmeticException {
 
-		this(ml.getAmount());
+		this(p, ml.getAmount());
 
 	}
 
